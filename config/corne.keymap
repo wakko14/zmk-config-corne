@@ -35,28 +35,28 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  +  |  1  |  2  |  3  |  -  |         |  [  |  \  |  {  |  "  |     | BSPC |
+// | TAB  |  +  |  1  |  2  |  3  |  -  |         |  [  |  \  |  {  |  "  |  =  | BSPC |
 // | CTRL |  *  |  4  |  5  |  6  |  /  |         |  ]  |  UP |  }  | "|" |  @  |   #  |
 // | SHFT |  (  |  7  |  8  |  9  |  )  |         | LFT | DWN | RGT |  $  |  %  |adjustLayer|
-//                    |  0  |  =  | SPC |         | ENT |  !  | ALT |
+//                    |  0  |  yo  | SPC |         | ENT |  !  | ALT |
                         bindings = <
-   &kp TAB &kp PLUS &kp N1 &kp N2 &kp N3 &kp MINUS   &kp LBKT &kp BSLH &kp LBRC &kp DQT &trans &kp BSPC
+   &kp TAB &kp PLUS &kp N1 &kp N2 &kp N3 &kp MINUS   &kp LBKT &kp BSLH &kp LBRC &kp DQT &EQUAL &kp BSPC
    &kp LCTRL &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp SLASH   &kp RBKT &kp UP &kp RBRC &kp PIPE &kp AT &kp HASH
    &kp LSHFT &kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT   &kp LEFT &kp DOWN &kp RIGHT &kp DLLR &kp PRCNT &mo 3
-                                    &kp N0 &kp EQUAL &kp SPACE   &kp RET &kp EXCL &kp RALT
+                                    &kp N0 &trans &kp SPACE   &kp RET &kp EXCL &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |rgb tog|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |RGB BRI+ |RGB SAT+ |RGB HUE+ |RGB ANI+ |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |RGB BRI- |RGB SAT- |RGB HUE- |RGB ANI- |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |      |      |    |     |     |     |        |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |      |    |     |     |     |        |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |      |    |     |     |     |        |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &rgb_ug RGB_TOG  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+   &trans  &trans &trans &trans &trans &trans      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans &trans &trans &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans &trans &trans &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
