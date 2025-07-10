@@ -35,12 +35,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  +  |  1  |  2  |  3  |  -  |         |  [  |  \  |  {  |  "  |ACUTE| BSPC |
+// | TAB  |  +  |  1  |  2  |  3  |  -  |         |  [  |  \  |  {  |  "  |     | BSPC |
 // | CTRL |  *  |  4  |  5  |  6  |  /  |         |  ]  |  UP |  }  | "|" |  @  |   #  |
 // | SHFT |  (  |  7  |  8  |  9  |  )  |         | LFT | DWN | RGT |  $  |  %  |adjustLayer|
 //                    |  0  |  =  | SPC |         | ENT |  !  | ALT |
                         bindings = <
-   &kp TAB &kp PLUS &kp N1 &kp N2 &kp N3 &kp MINUS   &kp LBKT &kp BSLH &kp LBRC &kp DQT &kp ACUTE &kp BSPC
+   &kp TAB &kp PLUS &kp N1 &kp N2 &kp N3 &kp MINUS   &kp LBKT &kp BSLH &kp LBRC &kp DQT &trans &kp BSPC
    &kp LCTRL &kp ASTERISK &kp N4 &kp N5 &kp N6 &kp SLASH   &kp RBKT &kp UP &kp RBRC &kp PIPE &kp AT &kp HASH
    &kp LSHFT &kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT   &kp LEFT &kp DOWN &kp RIGHT &kp DLLR &kp PRCNT &mo 3
                                     &kp N0 &kp EQUAL &kp SPACE   &kp RET &kp EXCL &kp RALT
