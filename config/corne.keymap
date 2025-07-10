@@ -16,18 +16,6 @@
 };
 
 / {
-    unicode_input_mode = "macos";
-
-    unicode_map {
-        compatible = "zmk,unicode-map";
-
-        a_acute = <U00E1>; 
-        e_acute = <U00E9>; 
-        i_acute = <U00ED>; 
-        o_acute = <U00F3>; 
-        u_acute = <U00FA>; 
-    };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -38,8 +26,8 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &ht &kp E &uc e_acute &kp R &kp T   &kp Y &ht &kp U &uc u_acute  &ht &kp I &uc i_acute     &ht &kp O &uc o_acute   &kp P    &kp BSPC
-   &kp LCTRL &ht &kp A &uc a_acute &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp TAB   &kp Q &kp W &ht &kp E &kp R &kp T   &kp Y &ht &kp U  &ht &kp I     &ht &kp O   &kp P    &kp BSPC
+   &kp LCTRL &ht &kp A  &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp RET   &kp SPACE &mo 2 &kp RALT
                         >;
