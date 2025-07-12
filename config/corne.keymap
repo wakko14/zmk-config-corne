@@ -17,25 +17,24 @@
 
 / {
 
-      macros {
-                eduard_mac {
-                    compatible = "zmk,behavior-macro";
-                    label = "EDUARD_MAC";
-                    #binding-cells = <0>;
-                    bindings = <
-                       &kp LS(E) &kp D &kp U &kp A &kp R &kp D &kp O &kp N2 &kp N4 &kp N6 &kp ASTERISK
-                    >;
-                };
-    
-                pagaqui_mac {
-                            compatible = "zmk,behavior-macro";
-                            label = "PAGAQUI_MAC";
-                            #binding-cells = <0>;
-                            bindings = <
-                                &kp LS(P) &kp A &kp G &kp A &kp Q &kp U &kp I &kp N1 &kp ASTERISK
-                            >;
-                };
-
+        macros {
+            eduard_mac: eduard_mac {
+                compatible = "zmk,behavior-macro";
+                label = "EDUARD_MAC";
+                #binding-cells = <0>;
+                bindings = <
+                    &kp LS(E) &kp D &kp U &kp A &kp R &kp D &kp O &kp N2 &kp N4 &kp N6 &kp ASTERISK
+                >;
+            };
+        
+            pagaqui_mac: pagaqui_mac {
+                compatible = "zmk,behavior-macro";
+                label = "PAGAQUI_MAC";
+                #binding-cells = <0>;
+                bindings = <
+                    &kp LS(P) &kp A &kp G &kp A &kp Q &kp U &kp I &kp N1 &kp ASTERISK
+                >;
+            };
         };
     
         keymap {
